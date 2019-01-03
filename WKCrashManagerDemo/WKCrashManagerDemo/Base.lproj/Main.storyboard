@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HzF-ze-FHs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMf-XD-Xop">
+                                <rect key="frame" x="133" y="152" width="108" height="30"/>
+                                <state key="normal" title="方法未找到闪退"/>
+                                <connections>
+                                    <action selector="methodNotFountClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMA-hT-ryV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-ho-JxQ">
+                                <rect key="frame" x="133.5" y="222" width="108" height="30"/>
+                                <state key="normal" title="数组插入nil闪退"/>
+                                <connections>
+                                    <action selector="arrarAddNilClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2h-Iz-k3S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQN-j7-Tac">
+                                <rect key="frame" x="126" y="286" width="123" height="30"/>
+                                <state key="normal" title="字符串添加nil闪退"/>
+                                <connections>
+                                    <action selector="strAppendNilClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drK-A2-rai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-uF-0e5">
+                                <rect key="frame" x="50" y="345" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xi9-EW-0sg"/>
+                                </constraints>
+                                <state key="normal" title="数组越界读取"/>
+                                <connections>
+                                    <action selector="anArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vUg-Vd-wFn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eX-LL-OPV">
+                                <rect key="frame" x="126" y="408" width="123" height="30"/>
+                                <state key="normal" title="字符串越界读取"/>
+                                <connections>
+                                    <action selector="anString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICL-fu-lbH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JJ-N5-bC6">
+                                <rect key="frame" x="0.0" y="460" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jlr-ZN-nkg"/>
+                                </constraints>
+                                <state key="normal" title="没有响应方法"/>
+                                <connections>
+                                    <action selector="noAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fw5-u6-YCG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJj-YL-L8e">
+                                <rect key="frame" x="0.0" y="500" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xX1-U8-0Z9"/>
+                                </constraints>
+                                <state key="normal" title="字典插入空值"/>
+                                <connections>
+                                    <action selector="dictionAddNill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBT-sD-01d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-8u-Yvx">
+                                <rect key="frame" x="0.0" y="540" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HLs-jU-tX4"/>
+                                </constraints>
+                                <state key="normal" title="防止KVO闪退"/>
+                                <connections>
+                                    <action selector="kvoCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cS8-1X-bxC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OJj-YL-L8e" firstAttribute="top" secondItem="6JJ-N5-bC6" secondAttribute="bottom" constant="10" id="0hK-Tb-HjB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fRH-uF-0e5" secondAttribute="trailing" constant="50" id="6cO-lv-cPx"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="centerX" secondItem="fRH-uF-0e5" secondAttribute="centerX" id="7nI-Da-kDY"/>
+                            <constraint firstItem="P5A-8u-Yvx" firstAttribute="top" secondItem="OJj-YL-L8e" secondAttribute="bottom" constant="10" id="C75-24-CeS"/>
+                            <constraint firstItem="6JJ-N5-bC6" firstAttribute="top" secondItem="0eX-LL-OPV" secondAttribute="bottom" constant="22" id="Dcg-3d-IiX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6JJ-N5-bC6" secondAttribute="trailing" id="FFj-Gz-uG9"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="286" id="Ffg-uE-EYa"/>
+                            <constraint firstItem="fRH-uF-0e5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Fug-31-hI7"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="centerX" secondItem="Ug4-ho-JxQ" secondAttribute="centerX" id="HLQ-lP-a1h"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="trailing" secondItem="0eX-LL-OPV" secondAttribute="trailing" id="Jia-5H-meN"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="top" secondItem="Ug4-ho-JxQ" secondAttribute="bottom" constant="34" id="Kry-ST-P5e"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="leading" secondItem="0eX-LL-OPV" secondAttribute="leading" id="Ptb-jF-ftg"/>
+                            <constraint firstItem="vMf-XD-Xop" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Wij-Hu-8QV"/>
+                            <constraint firstItem="0eX-LL-OPV" firstAttribute="top" secondItem="fRH-uF-0e5" secondAttribute="bottom" constant="33" id="ZHq-gB-58g"/>
+                            <constraint firstItem="kQN-j7-Tac" firstAttribute="centerX" secondItem="vMf-XD-Xop" secondAttribute="centerX" id="b6L-1a-ULZ"/>
+                            <constraint firstItem="fRH-uF-0e5" firstAttribute="top" secondItem="kQN-j7-Tac" secondAttribute="bottom" constant="29" id="dJX-Sq-7ho"/>
+                            <constraint firstItem="6JJ-N5-bC6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fet-Xs-VgG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OJj-YL-L8e" secondAttribute="trailing" id="g4r-tU-rpv"/>
+                            <constraint firstItem="vMf-XD-Xop" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="nlu-5D-xmP"/>
+                            <constraint firstItem="P5A-8u-Yvx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oB0-n6-gTA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P5A-8u-Yvx" secondAttribute="trailing" id="tVc-EI-XRq"/>
+                            <constraint firstItem="OJj-YL-L8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="way-lx-f9j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="utQ-0g-db2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ish-Fa-XWd">
+            <objects>
+                <navigationController id="HzF-ze-FHs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bsd-mj-MGD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="D5g-LN-8Gf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTu-iG-RCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="139"/>
+        </scene>
+    </scenes>
+</document>
